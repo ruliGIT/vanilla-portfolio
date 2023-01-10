@@ -1,0 +1,477 @@
+body {
+    padding-top: 80px;
+  }
+  
+#experience {
+    margin-top: -80px;
+    padding-top: 80px;
+}
+
+#about {
+    margin-top: -80px;
+    padding-top: 150px;
+}
+
+#projs {
+    margin-top: -65px;
+    padding-top: 65px;
+}
+
+#experience, #projs, #about, #contact   {
+    height:100vh;
+}
+
+.max-width {
+    padding: 20px 50px;
+    background-color: #DCD6F7;
+}
+
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    background-color: #DCD6F7;
+    z-index: 999;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#nav-menu-2 {
+    justify-content: left;
+    padding-left: 150px;
+}
+
+ul {
+    list-style: none;
+    color: #fff;
+}
+
+ul a {
+    text-decoration: none;
+    color: #434975;
+    text-transform: uppercase;
+}
+
+ul a:hover {
+    color: #A6B1E1;
+}
+
+.home {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+}
+
+.home .left h1 {
+    font-size: 3rem;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home .left {
+    flex: 3;
+}
+
+.home .left .tag:hover {
+    color: #A6B1E1;
+    font-size: 110%;
+    transition: 0.3s ease-out;
+}
+
+.home .left .links {
+    display: flex;
+    grid-gap: 1.5rem;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.home .left p {
+    color: #6b6e70;
+    font-size: 1.3rem;
+}
+
+.home .right img {
+    border-radius: 3%;
+    max-width: 500px;
+    border:#4f8495 3px solid;
+}
+
+.home .right ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* Experience */
+
+.experience h1{
+    text-align: center;
+    color: #434975;
+}
+
+.exp-cards {
+    display: grid;
+    padding-right: 350px;
+    padding-left: 350px;
+    gap: 2rem;
+}
+
+.exp-card {
+    border-radius: 20px;
+    background: #F4EEFF;
+    min-height: 100px;
+    padding: 30px;
+    color: #434975;
+    box-shadow: #000;
+}
+
+.exp-card:hover {
+    outline: #434975 solid 3px;
+}
+
+#exp-cards a {
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.exp-card ul {
+    margin: 0;
+    color: #A6B1E1;
+}
+
+.exp-card h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.resume {
+    text-decoration: underline;
+    border: none;
+    background-color: #434975;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #000;
+    margin-left: 30%;
+    margin-right: 30%;
+}  
+
+.resume:hover {
+    cursor: pointer;
+    color:#434975;
+    background-color: #F4EEFF;
+    outline: #434975 solid 2px;
+}
+
+/* Projects Section */
+
+.projs h1{
+    text-align: center;
+    color: #434975;
+}
+
+/* proj css test */
+
+.proj-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 2fr));
+    gap: 1rem;
+    margin: 1rem 4vw;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.proj-card {
+    position: relative;
+    display: flex;
+    height: 100%;  
+    border-radius: 10%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.proj-card:hover {
+    outline: #434975 solid 2px;
+}
+
+.card__image {      
+    width: 100%;
+    height: auto;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.proj-card:hover .card__overlay {
+    transform: translateY(0);
+    background-color: #A6B1E1;
+    border-radius: 10%;
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 10%;    
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+    background-color: #A6B1E1;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+}
+
+.proj-card:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #434975;
+}
+
+.card__status {
+    font-size: .8em;
+    color: white;
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #DCD6F7;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+} 
+
+
+.proj-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 10px;
+}
+
+.proj-buttons button {
+    color: #fff;
+    border-radius: 5%;
+    border-style: none;
+    padding: 5px 10px;
+}
+
+.proj-buttons button:hover {
+    cursor: pointer;
+    background-color: #a1daec;
+    color: #000;
+}
+
+
+/* Styles for about-me-section */
+
+.about-section {
+    color: #434975;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3 1;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    background: #434975;
+    padding: 30px;
+    box-shadow: #000;
+}
+
+.about-text p {
+    color: white;
+}
+
+.about-section p a {
+    color: #4f8495;
+    text-decoration: underline;
+}
+
+.about-section a {
+    color: #4f8495;
+    text-decoration: none;
+    flex: 3 1;
+}
+
+.row-cols-1 {
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3 1;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+}
+
+/* For more than 1 polaroid*/
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.row-cols-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.row-cols-sm-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.row-cols-md-3 > * {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.row-cols-md-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    z-index: 0;
+    position: relative;
+}
+.polaroid a:after {
+    color: #333;
+    font-size: 15px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+}
+.polaroid img {
+    display: block;
+    width: 250px;
+}
+.polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* timeline section */
+
+.timeline-page h1{
+    text-align: center;
+    color: #434975;
+}
+
+.timeline-page {
+    margin-top: -80px;
+    padding-top: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.timeline-page form {
+    display: grid;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+
+.timeline-post {
+    background-color: #A6B1E1;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.timeline-post p {
+    text-align: center;
+}

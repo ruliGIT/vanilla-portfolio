@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Personal Portfolio" />
+    <meta property="og:description" content="My Personal Portfolio" />
+    <meta property="og:url" content="{{ url }}" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+    <title>My Portfolio</title>
+  </head>
+
+  <!--Nav-->
+  <nav>
+    <ul class="nav-menu">
+      <a href=""><li>Home</li></a>
+      <a href="#experience"><li>Experience</li></a>
+      <a href="#projs"><li>Projects</li></a>
+      <a href="#about"><li>About</li></a>
+    </ul>
+  </nav>
+
+  <body class="max-width">
+    <!--Home Section-->
+    <div class="home">
+      <div class="left">
+        <h1>Ishami Rulinda</h1>
+        <p>
+          <span class="tag">Developer</span> | <span class="tag">Fellow</span> |
+          <span class="tag">Student</span>
+        </p>
+        <ul class="links">
+          <a href="https://www.linkedin.com/in/ishami-rulinda-063949238/"><li><i class="fa-brands fa-linkedin" style="font-size: 2em"></i></li>
+          </a><a href="https://github.com/ruliGIT"><li><i class="fa-brands fa-github" style="font-size: 2em"></i></li></a>
+          <a href="ishami11@live.com"><li><i class="fa-solid fa-envelope" style="font-size: 2em"></i></li></a>
+        </ul>
+      </div>
+      <div class="right">
+        
+      </div>
+    </div>
+
+    <!--Experiences -->
+    <div id="experience" class="experience">
+      <h1>Experience</h1>
+      
+      <div class="exp-cards">
+        <div class="exp-card">
+          <h2>Production Engineering Fellow (Meta)</h2>
+          <ul>
+            <li>* Major League Hacking</li>
+            <li>* Completed 12-weeks of structured curriculum-based learning covering core Production Engineering topics and built this website!</li>
+            <li>* Jun 2022 – Aug 2022</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+            <h2>Research Volunteer</h2>
+            <ul>
+              <li>* Queen’s MIB Laboratory</li>
+              <li>* Working towards finding more advanced computational methods to analyze cancer mutation data by exploring different machine learning techniques</li>
+              <li>* Jun 2022 – present</li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <h2>General Member</h2>
+            <ul>
+              <li>* Queen’s Web Development Club</li>
+              <li>* Learned fundamentals of web development and modern web development tools (React.js, Node.js, Figma) and worked on team project using Google Maps JavaScript API</li>
+              <li>* Sept 2021 – Apr 2022</li>
+            </ul>
+          </div>
+        <a class='resume' id="resume-pdf" href=".\static\img\Resume.pdf" target="_blank">My Resume.pdf</a>
+      </div>
+    </div>
+
+    <div id="projs" class="projs">
+      <h1>Projects</h1>
+      <ul class="proj-cards">
+        <li>
+          <div href="" class="proj-card">
+            <img src="https://i.pinimg.com/originals/2d/38/4a/2d384a99b7f36a636bb9ea81ba5d727f.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                <div class="card__header-text">
+                  <h3 class="card__title">Cryptocurrency Details and News</h3>            
+                  <span class="card__status">Tech Stack: JavaScript, React, Redux Toolkit, Chart.js, and Node.js</span>
+                </div>
+              </div>
+              <p class="card__description">Built a React application that displays present data and news of the top 100 crypto currencies</p>
+              <div class="proj-buttons">
+                <a href="https://github.com/ruliGIT/Top100crypto"><button style="background-color: #a9e1a4;">GitHub</button></a>
+                <a href="https://sage-100-cryptos-ir.netlify.app/"><button style="background-color: #5872d0;">Demo</button></a>
+              </div>
+            </div>
+            
+          </div>      
+        </li>
+
+        <li>
+            <div href="" class="proj-card">
+              <img src="https://i.pinimg.com/originals/2d/38/4a/2d384a99b7f36a636bb9ea81ba5d727f.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                  <div class="card__header-text">
+                    <h3 class="card__title">Diabetes Predictor</h3>            
+                    <span class="card__status">Tech Stack: Python, Pandas, Numpy, Scikit-Learn, Streamlit</span>
+                  </div>
+                </div>
+                <p class="card__description">Built a machine learning model that predicts a users diabetes diagnosis</p>
+                <div class="proj-buttons">
+                  <a href="https://github.com/ruliGIT/diabetes-prediction"><button style="background-color: #a9e1a4;">GitHub</button></a>
+                  <a href="https://share.streamlit.io/ruligit/diabetes-prediction/main/streamlitApp.py"><button style="background-color: #5872d0;">Demo</button></a>
+                </div>
+              </div>
+              
+            </div>      
+          </li>
+
+          <li>
+            <div href="" class="proj-card">
+              <img src="https://i.pinimg.com/originals/2d/38/4a/2d384a99b7f36a636bb9ea81ba5d727f.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                  <div class="card__header-text">
+                    <h3 class="card__title">Queen’s University CISC 226: Game Design Course Project</h3>            
+                    <span class="card__status">Tech Stack: Unity, C#</span>
+                  </div>
+                </div>
+                <p class="card__description">Developed a PacMan inspired rogue-like game using the Unity Game Engine</p>
+                <div class="proj-buttons">
+                  <a href="https://github.com/CISC-226-22W/gpd-gdp-23/tree/VideoSceneIsaac"><button style="background-color: #a9e1a4;">GitHub</button></a>
+                  <a href="https://creative.caslab.queensu.ca/~GDP23/"><button style="background-color: #5872d0;">Demo</button></a>
+                </div>
+              </div>
+              
+            </div>      
+          </li>
+
+          <li>
+            <div href="" class="proj-card">
+              <img src="https://i.pinimg.com/originals/2d/38/4a/2d384a99b7f36a636bb9ea81ba5d727f.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                  <div class="card__header-text">
+                    <h3 class="card__title">This Portfolio Website!</h3>            
+                    <span class="card__status">Tech Stack:  Python, Flask, Jinja, MySQL, Docker</span>
+                  </div>
+                </div>
+                <p class="card__description">Portfolio website template using Python, Flask, Jinja, MySQL, Nginx, and unittest</p>
+                <div class="proj-buttons">
+                  <a href="https://github.com/ruliGIT/pe-portfolio"><button style="background-color: #a9e1a4;">GitHub</button></a>
+                  <a href="https://ishami-ru.duckdns.org/"><button style="background-color: #5872d0;">Demo</button></a>
+                </div>
+              </div>
+              
+            </div>      
+          </li>
+      </ul>
+
+    <!--About Me Section-->
+    <div id="about" class="about-section">
+      <h1>About</h1>
+      <div class="about-text">
+        <p>
+          Hello, my name is Ishami Rulinda and I am a student at Queen's University 
+          working towards a bachelor in Computer Science and Biology. 
+          I have interests in machine learning, DevOps, and web and game development. 
+          I love learning and teaching myself old and new tools to build cool projects! 
+        </p>
+      </div>
+      <div class="row-cols-1">
+        <div class="polaroid">
+          <a
+            class="caption"
+            href="#"
+            style="font-size: 1px"
+            title="Queen's University"
+          >
+            <img
+              height="250"
+              src="static\img\Image-Queens-University.jpg"
+              alt="Santorini"
+              title="Santorini"
+            />
+          </a>
+        </div>
+      </div>
+  </body>
+</html>
